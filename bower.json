@@ -1,0 +1,16 @@
+{
+  "name": "TIY-Catalog",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kmattiko/TIY-Catalog",
+  "authors": [
+    "Kim Mattiko <amberlie@rocketmail.com>"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
