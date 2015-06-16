@@ -1,0 +1,25 @@
+{
+  "name": "TIY-Catalog",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wiredep": "wiredep --src src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmattiko/TIY-Catalog.git"
+  },
+  "author": "",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/kmattiko/TIY-Catalog/issues"
+  },
+  "homepage": "https://github.com/kmattiko/TIY-Catalog",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^2.7.10",
+    "node-sass": "^3.2.0",
+    "wiredep": "^2.2.2"
+  }
+}
