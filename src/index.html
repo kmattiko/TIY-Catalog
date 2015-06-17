@@ -7,10 +7,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
         <!-- endbower -->
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+
+<main class="container">
+<header class="page-header"> <!-- exmaple for item detail page w/ bootstrap -->
+  <a href="#" class="col-sm-1"><img src="http://lorempixel.com/75/75/animals"></a>
+  <h4 class= "shop-name col-sm-2">
+    <a href="#">Lorem products...</a>
+    <button>Favorite</button>
+</h4>
+<nav class="col-sm-6 col-sm-offset-3">
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+</nav>
+</header> <!-- end of example from class -->
+
 
 <div class= "grid">
   <div class= "unit-3">
@@ -63,7 +80,6 @@
   <div class= "unit-3">
     <div class= "itemcolumn1">
       <h3>{{path for items}}</h3>
-
     </div>
   </div>
   <div class= "unit-3">
@@ -84,12 +100,19 @@
     </div>
   </div>
 </div>
+
+<main class="container">
+  <h1>hello world</h1>
+</main>
         <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/modernizr/modernizr.js"></script>
         <script src="../bower_components/jQuery/dist/jquery.js"></script>
+        <script src="../bower_components/lodash/lodash.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <!-- endbower -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
 
     </body>
 </html>
