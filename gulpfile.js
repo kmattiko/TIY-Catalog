@@ -1,13 +1,20 @@
 var gulp = require('gulp');
-
+var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
+//this is for browser sync to work
+gulp.task('browserSync', function(){
+    browserSync.init({
+      server: "./src/index.html"
+    });
+    gulp.watch("src/scss")
+});
+//
 gulp.task('do-something', function(){
   console.log(arguments);
   console.log('I did something');
 });
 
 gulp.task('sass', function(){
-
-  var sass = require('gulp-sass');
 
   gulp.src('src/scss/main.scss')
     .pipe(sass())

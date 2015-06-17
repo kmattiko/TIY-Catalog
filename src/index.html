@@ -12,9 +12,78 @@
     </head>
     <body>
 
-        <!-- Add your site or application content here -->
+<div class= "grid">
+  <div class= "unit-3">
+    <div class= "menu">
+      <h3>Show results for:</h3>
+    <div class="menubox 1">
+      <h3>All Categories</h3>
+      <ul class = "othercategories">
+        <li>{{related categories}}</li>
+    </div>
+    <h3>Refine your search</h3>
+    <ul class="menubox 2">
+      <li>
+        <form>
+          <input type="radio" name="itemtype" value="All Items"> All Items
+          <br>
+          <input type="radio" name="itemtype" value="Handmade"> Handmade
+          <br>
+          <input type="radio" name="itemtype" value="Vintage"> Vintage
+        </form>
+      </li>
+      <li>
+        <p>Price</p>
+        <p>Low</p>
+        <p>High</p>
+      </li>
+      <li>Filter by Color</li>
+      <li>Ordering Options
+        <li>Accepts Etsy Gift Cards</li>
+        <li>Customizable</li>
+      </li>
+      <li>
+        <form>Shop Location<br>
+          <input type="radio" name="shoplocal" value="anywhere"> Anywhere
+          <br>
+          <input type="radio" name="shoplocal" value="United States"> United States
+          <br>
+          <input type="radio" name="shoplocal" value="custom"> Custom Location
+        </form>
+      </li>
+      <li>
+        <form>
+          Ship To<br>
+          <input type="text">
+        </form>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div class= "unit-3">
+    <div class= "itemcolumn1">
+      <h3>{{path for items}}</h3>
 
+    </div>
+  </div>
+  <div class= "unit-3">
+    <div class= "itemcolumn2">
 
+    </div>
+  </div>
+  <div class= "unit-3">
+    <div class= "itemcolumn3">
+      <h3>Sort By:</h3>
+      <select>
+        <option>Relevancy</option>
+        <option>Most Recent</option>
+        <option>Relevancy</option>
+        <option>Highest Price</option>
+        <option>Lowest Price</option>
+      </select>
+    </div>
+  </div>
+</div>
         <!-- bower:js -->
         <script src="../bower_components/jQuery/dist/jquery.js"></script>
         <!-- endbower -->
