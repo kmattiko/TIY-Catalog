@@ -1,0 +1,23 @@
+.grid {
+  $grid-width = 100%;
+  width: 80%;
+
+  @extend clearfix;
+  margin: 0 auto;
+
+  $unit = $grid-width/12;
+
+  $unit-1 {
+    $unit * 1;
+  }
+
+  $unit-2 {
+    @extend $unit-1;
+    $unit * 2;
+  }
+
+  $unit-3 {
+    @extend $unit-1;
+    $unit * 3;
+  }
+}

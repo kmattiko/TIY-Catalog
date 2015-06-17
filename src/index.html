@@ -7,20 +7,112 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
         <!-- endbower -->
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
-        <!-- Add your site or application content here -->
+<main class="container">
+<header class="page-header"> <!-- exmaple for item detail page w/ bootstrap -->
+  <a href="#" class="col-sm-1"><img src="http://lorempixel.com/75/75/animals"></a>
+  <h4 class= "shop-name col-sm-2">
+    <a href="#">Lorem products...</a>
+    <button>Favorite</button>
+</h4>
+<nav class="col-sm-6 col-sm-offset-3">
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+  <a href="#"><img src="http://lorempixel.com/75/75/cats"></a>
+</nav>
+</header> <!-- end of example from class -->
 
 
+<div class= "grid">
+  <div class= "unit-3">
+    <div class= "menu">
+      <h3>Show results for:</h3>
+    <div class="menubox 1">
+      <h3>All Categories</h3>
+      <ul class = "othercategories">
+        <li>{{related categories}}</li>
+    </div>
+    <h3>Refine your search</h3>
+    <ul class="menubox 2">
+      <li>
+        <form>
+          <input type="radio" name="itemtype" value="All Items"> All Items
+          <br>
+          <input type="radio" name="itemtype" value="Handmade"> Handmade
+          <br>
+          <input type="radio" name="itemtype" value="Vintage"> Vintage
+        </form>
+      </li>
+      <li>
+        <p>Price</p>
+        <p>Low</p>
+        <p>High</p>
+      </li>
+      <li>Filter by Color</li>
+      <li>Ordering Options
+        <li>Accepts Etsy Gift Cards</li>
+        <li>Customizable</li>
+      </li>
+      <li>
+        <form>Shop Location<br>
+          <input type="radio" name="shoplocal" value="anywhere"> Anywhere
+          <br>
+          <input type="radio" name="shoplocal" value="United States"> United States
+          <br>
+          <input type="radio" name="shoplocal" value="custom"> Custom Location
+        </form>
+      </li>
+      <li>
+        <form>
+          Ship To<br>
+          <input type="text">
+        </form>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div class= "unit-3">
+    <div class= "itemcolumn1">
+      <h3>{{path for items}}</h3>
+    </div>
+  </div>
+  <div class= "unit-3">
+    <div class= "itemcolumn2">
+
+    </div>
+  </div>
+  <div class= "unit-3">
+    <div class= "itemcolumn3">
+      <h3>Sort By:</h3>
+      <select>
+        <option>Relevancy</option>
+        <option>Most Recent</option>
+        <option>Relevancy</option>
+        <option>Highest Price</option>
+        <option>Lowest Price</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <h1>hello world</h1>
+</main>
         <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/modernizr/modernizr.js"></script>
         <script src="../bower_components/jQuery/dist/jquery.js"></script>
+        <script src="../bower_components/lodash/lodash.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <!-- endbower -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
 
     </body>
 </html>
